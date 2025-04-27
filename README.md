@@ -4,7 +4,7 @@
 
 This repository contains a machine learning project for predicting bioactivity based on chemical structure.  
 The workflow was initially developed for molecules targeting the coronavirus Replicase Polyprotein 1ab, using SMILES strings and molecular descriptors.  
-The current project has been generalized into a modular pipeline for analyzing bioactivity data for any protein target.
+The current project has been generalized into a pipeline for analyzing bioactivity data for any protein target.
 
 ---
 
@@ -30,11 +30,9 @@ CDD_ML_Project/
 │   ├── model_evaluation.py      # Evaluation and plotting
 ├── data/
 │   └── example_dataset.csv      # Example input dataset
-├── outputs/
-│   └── (optional saved outputs)
-├── streamlit_app.py              # Streamlit app interface
-├── requirements.txt              # Required Python packages
-└── README.md                     # Project overview
+├── streamlit_app.py             # Streamlit app interface
+├── requirements.txt             # Required Python packages
+└── README.md                    # Project overview
 
 ---
 
