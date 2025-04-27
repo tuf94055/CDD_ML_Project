@@ -18,7 +18,7 @@ The current project has been generalized into a pipeline for analyzing bioactivi
 ---
 
 ### Project Structure:
-
+```
 CDD_ML_Project/
 ├── notebooks/
 │   └── 01_run_pipeline.ipynb    # Main Jupyter notebook pipeline
@@ -33,7 +33,7 @@ CDD_ML_Project/
 ├── streamlit_app.py             # Streamlit app interface
 ├── requirements.txt             # Required Python packages
 └── README.md                    # Project overview
-
+```
 ---
 
 ### Required Packages:
