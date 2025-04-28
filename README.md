@@ -4,16 +4,16 @@
 
 This repository contains a machine learning project for predicting bioactivity based on chemical structure.  
 The workflow was initially developed for molecules targeting the coronavirus Replicase Polyprotein 1ab, using SMILES strings and molecular descriptors.  
-The current project has been generalized into a pipeline for analyzing bioactivity data for any protein target.
+The current project has been generalized into a pipeline for analyzing bioactivity data for any protein target with ChEMBL bioactivity data.
 
 ---
 
 ### Features:
 - Load and clean bioactivity datasets from CSV.
 - Compute Lipinski descriptors (Molecular Weight, LogP, H-bond Donors, H-bond Acceptors) from SMILES.
-- Train various machine learning models (Random Forest amongst them) to predict bioactivity (IC50 values).
+- Train Random Forest Regressor and other machine learning models to predict bioactivity (IC50 values).
 - Compare model performance and visualize results.
-- Streamlit web app for interactive exploration (`streamlit_app.py`).
+- Interactive Streamlit web app for real-time exploration, hyperparameter tuning, and model training (`streamlit_app.py`).
 
 ---
 
@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 Open notebooks/01_run_pipeline.ipynb and run all cells sequentially.
 
-4. (Optional) Launch the Streamlit app:
+4. Launch the Streamlit app:
 
 ```
 streamlit run streamlit_app.py
@@ -86,6 +86,7 @@ streamlit run streamlit_app.py
 - Machine learning model training results.
 - Scatter plots comparing actual vs. predicted bioactivity.
 - Model evaluation metrics (e.g., RMSE, R² score).
+- Interactive predictions and evaluation in the Streamlit app.
 
 ---
 
